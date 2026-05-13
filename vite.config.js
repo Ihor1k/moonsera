@@ -16,7 +16,7 @@ export default defineConfig({
     outDir: resolve(__dirname, "dist"),
     rollupOptions: {
       input: {
-        index: "./src/index.html",
+        index: "./index.html",
         politic: "./src/politic.html",
       },
     },
