@@ -9,7 +9,15 @@ import { babel } from "@rollup/plugin-babel";
 import { defineConfig } from "vite";
 import { resolve } from "path";
 
+// GitHub Pages: workflow sets BASE_PATH (e.g. /repo/). User site *.github.io uses /.
+// Local: npm run dev / npm run build → base defaults to /.
+const pagesBase =
+  process.env.BASE_PATH && process.env.BASE_PATH !== "undefined"
+    ? process.env.BASE_PATH
+    : "/";
+
 export default defineConfig({
+  base: pagesBase,
   // root: "src",
   envDir: "../",
   build: {
