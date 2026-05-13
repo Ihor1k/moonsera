@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script type="module" crossorigin src="/assets/polyfills-DEvHrzuw.js"></script>
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="/assets/favicon-ayNYoERG.svg" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moonsera</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    /> -->
+    <script type="module" crossorigin src="/assets/index-DcPPgL4f.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/main-NlJ-7TqN.js">
+    <link rel="stylesheet" crossorigin href="/assets/main-3f1B8OLI.css">
+    <script type="module">import.meta.url;import("_").catch(()=>1);(async function*(){})().next();if(location.protocol!="file:"){window.__vite_is_modern_browser=true}</script>
+    <script type="module">!function(){if(window.__vite_is_modern_browser)return;console.warn("vite: loading legacy chunks, syntax error above and the same error below should be ignored");var e=document.getElementById("vite-legacy-polyfill"),n=document.createElement("script");n.src=e.src,n.onload=function(){System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))},document.body.appendChild(n)}();</script>
+  </head>
+  <body>
+    <div class="menu-overlay"></div>
+    <header class="header">
+      <div class="container">
+        <div class="header-inner">
+          <div class="header-logo">
+            <a href="/"
+              ><img
+                src="/assets/header-logo-D7ScWL0X.png"
+                width="117"
+                height="23"
+                alt="Logo"
+            /></a>
+          </div>
+          <div class="header-logo-mobile">
+            <a href="/"
+              ><img
+                src="/assets/header-logo-D7ScWL0X.png"
+                width="117"
+                height="23"
+                alt="Logo"
+            /></a>
+          </div>
+
+          <div class="burger">
+            <img src="data:image/svg+xml,%3csvg%20width='30'%20height='18'%20viewBox='0%200%2030%2018'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20width='30'%20height='1.2'%20fill='white'/%3e%3crect%20y='8.3999'%20width='30'%20height='1.2'%20fill='white'/%3e%3crect%20y='16.8'%20width='30'%20height='1.2'%20fill='white'/%3e%3c/svg%3e" alt="" />
+          </div>
+
+          <div class="header-menu">
+            <div class="burger-close">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M6.4 19L5 17.6L10.6 12L5 6.4L6.4 5L12 10.6L17.6 5L19 6.4L13.4 12L19 17.6L17.6 19L12 13.4L6.4 19Z"
+                  fill="#fff"
+                />
+              </svg>
+            </div>
+            <a href="#hero" class="header-link">Home</a>
+            <a href="#about" class="header-link">About</a>
+            <a href="#services" class="header-link">Services</a>
+            <a href="#contact" class="header-link">Contact</a>
+          </div>
+
+          <div class="header-buttons mobile-visible">
+            <button class="header-button">
+              <span>Get Started</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="popup-overlay" id="popup">
+      <div class="popup">
+        <div class="popup-block">
+          <div class="popup-inner">
+            <div class="popup-context">
+              <h3>Start a Confidential Discussion </h3>
+              <p class="pop-text">
+                Get in Touch with Moonsera. Whether you need support with branding, marketing, or technical solutions, our team is ready to assist
+              </p>
+            </div>
+  
+            <form class="popup-form" id="joinForm">
+              <div class="form-field">
+                <!-- <label for="name">Full name*</label> -->
+                <input type="text" id="name" name="name" placeholder="Add your full name*" required />
+              </div>
+              <div class="form-field">
+                <!-- <label for="name">Company/Organization (optionaly)</label> -->
+                <input type="text" id="company" name="company" placeholder="Add company name*"/>
+              </div>
+              <div class="form-field">
+                <!-- <label for="name">Email adress*</label> -->
+                 <input type="email" id="email" name="email" placeholder="Add your Email adress*" required/>
+              </div>
+              <div class="form-field">
+                 <input type="text" id="interest" name="interest" placeholder="Service Interest"/>
+              </div>
+              <!-- <div class="form-field">
+                <input type="tel" id="phone" name="phone" placeholder="Phone (optional)" required />
+              </div> -->
+              
+              <div class="form-field">
+                <!-- <label for="name">Message*</label> -->
+                <textarea id="message" name="message" placeholder="Your message" rows="3" required></textarea>
+              </div>
+              <div class="popup-wrapper">
+                <button type="submit" class="popup-btn">
+                  <span>Submit Request</span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        
+ 
+        <span class="close-popup"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+          <path d="M1 13L13 1M1 1L13 13" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg></span>
+      </div>
+    </div>
+
+    <section id="hero" class="hero">
+      <div class="video">
+        <video autoplay muted loop playsinline preload="auto" style="max-height: 810px;">
+          <source src="/assets/hero-video-less-DME8PtjQ.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="container">
+        <h1 class="hero-title">Build, Launch, and Scale </h1>
+        <p class="hero-text">Your Brand with Confidence </p>
+        <div class="hero-content">
+          <p class="hero-suptext">Moonsera delivers integrated marketing, brand management, and technology-backed solutions designed to help businesses establish a strong presence and grow sustainably</p>
+          <button class="hero-button"><span>Get Started</span></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="marquee">
+      <div class="marquee-track">
+        <span class="marquee-text">
+          Build, Launch, and <span style="margin-right: 10px;" class="stroke"><img src="/assets/scale-2kNs806V.svg" alt=""></span>.
+        </span>
+        <span class="marquee-text" aria-hidden="true">
+          Build, Launch, and <span class="stroke"><img src="/assets/scale-2kNs806V.svg" alt=""></span>.
+        </span>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container">
+        <div class="about-inner">
+          <div class="video video-about" style="position: relative;">
+            <video autoplay muted loop playsinline preload="auto" style="max-height: 482px; border-radius: 16px;">
+              <source src="/assets/about-video-less-6-44voDk.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="about-content">
+            <div class="about-block">
+              <h2 class="about-title">About</h2>
+              <div class="corner">
+                <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33" fill="none">
+                  <path d="M0 0.5H16C24.8366 0.5 32 7.66345 32 16.5V32.5" stroke="#A77CFF"/>
+                </svg>
+              </div>
+            </div>
+            <div class="about-suptext">
+              <p class="about-text">Moonsera is a marketing, brand management, and technology support company focused on helping businesses create and maintain a strong, protected, and high-performing brand presence. By combining branding, marketing execution, and technical infrastructure, the company offers a unified approach that eliminates fragmentation and improves efficiency across all stages of growth</p>
+              <p class="about-text">Rather than separating creative, operational, and technical functions, Moonsera aligns them into a single workflow. This allows businesses to move from concept to execution and ongoing support with consistency, ensuring that both strategic direction and day-to-day operations remain aligned with long-term objectives</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="value">
+      <div class="container">
+        <div class="value-content">
+          <h2 class="value-title">Core Value</h2>
+          <p class="value-text">A modern brand requires more than visibility. It requires structure, protection, and technical reliability. Moonsera focuses on delivering all of these elements within a single, coordinated framework</p>
+        </div>
+        <div class="value-list">
+          <div class="value-item">
+            <img src="/assets/value1-DobuQxeb.png" alt="" class="value-bg">
+        
+            <div class="value-inner">
+                <div class="value-num">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="118" viewBox="0 0 64 118" fill="none">
+                        <defs>
+                            <linearGradient id="valueNumGradient" x1="0.0791205" y1="0.397944" x2="23.8854" y2="142.96" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#09BBFF"/>
+                                <stop offset="0.495192" stop-color="#4B54FF"/>
+                                <stop offset="1" stop-color="#6B22FF"/>
+                            </linearGradient>
+                        </defs>
+        
+                        <path 
+                            class="value-num-default"
+                            d="M31.5308 117.407V23.4131L0 33.2397V9.74121L31.5308 0H63.0615V117.407H31.5308Z" 
+                        />
+        
+                        <path 
+                            class="value-num-gradient"
+                            d="M31.5308 117.407V23.4131L0 33.2397V9.74121L31.5308 0H63.0615V117.407H31.5308Z" 
+                        />
+                    </svg>
+                </div>
+        
+                <p class="value-item-title">Integrated Approach</p>
+                <p class="value-item-text">Brand, marketing, and technology working as one system</p>
+                <p class="value-item-suptext">→ No gaps between strategy and execution</p>
+            </div>
+          </div>
+
+          <div class="value-item">
+            <img src="/assets/value2-BH3kxqlk.png" alt="" class="value-bg">
+        
+            <div class="value-inner">
+                <div class="value-num">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="124" height="121" viewBox="0 0 124 121" fill="none">
+                        <defs>
+                            <linearGradient id="valueNumGradient" x1="0.0791205" y1="0.397944" x2="23.8854" y2="142.96" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#09BBFF"/>
+                                <stop offset="0.495192" stop-color="#4B54FF"/>
+                                <stop offset="1" stop-color="#6B22FF"/>
+                            </linearGradient>
+                        </defs>
+        
+                        <path 
+                            class="value-num-default"
+                            d="M0 120.398V99.3774C15.2669 92.3706 28.5116 86.1043 39.7339 80.5786C51.0132 75.0529 60.3271 70.0399 67.6758 65.5396C75.0814 61.0392 80.5786 56.9377 84.1675 53.2349C87.7563 49.4751 89.5508 45.8577 89.5508 42.3828C89.5508 41.4144 89.4369 40.332 89.209 39.1357C89.0381 37.8825 88.5824 36.6292 87.8418 35.376C87.1582 34.0658 86.1328 32.784 84.7656 31.5308C83.3984 30.2775 81.5186 29.1952 79.126 28.2837C76.7334 27.3153 73.7712 26.5462 70.2393 25.9766C66.7074 25.3499 62.4349 25.0366 57.4219 25.0366C52.8076 25.0366 47.994 25.3499 42.981 25.9766C37.9679 26.5462 33.0119 27.3722 28.1128 28.4546C23.2137 29.5369 18.4855 30.8472 13.9282 32.3853C9.37093 33.9233 5.18392 35.6608 1.36719 37.5977V9.65576C9.22852 6.92139 17.9443 4.64274 27.5146 2.81982C37.1419 0.939941 47.2819 0 57.9346 0C67.9036 0 76.8188 0.882975 84.6802 2.64893C92.5415 4.41488 99.1781 6.97835 104.59 10.3394C110.059 13.6434 114.217 17.688 117.065 22.4731C119.971 27.2013 121.423 32.5562 121.423 38.5376C121.423 41.8416 121.053 44.9463 120.312 47.8516C119.629 50.6999 118.376 53.4912 116.553 56.2256C114.73 58.96 112.252 61.7228 109.119 64.5142C106.042 67.2485 102.112 70.1538 97.3267 73.23C92.5985 76.3062 86.9303 79.6387 80.3223 83.2275C73.7142 86.7594 66.0238 90.6901 57.251 95.0195H123.901V120.398H0Z" 
+                        />
+        
+                        <path 
+                            class="value-num-gradient"
+                            d="M0 120.398V99.3774C15.2669 92.3706 28.5116 86.1043 39.7339 80.5786C51.0132 75.0529 60.3271 70.0399 67.6758 65.5396C75.0814 61.0392 80.5786 56.9377 84.1675 53.2349C87.7563 49.4751 89.5508 45.8577 89.5508 42.3828C89.5508 41.4144 89.4369 40.332 89.209 39.1357C89.0381 37.8825 88.5824 36.6292 87.8418 35.376C87.1582 34.0658 86.1328 32.784 84.7656 31.5308C83.3984 30.2775 81.5186 29.1952 79.126 28.2837C76.7334 27.3153 73.7712 26.5462 70.2393 25.9766C66.7074 25.3499 62.4349 25.0366 57.4219 25.0366C52.8076 25.0366 47.994 25.3499 42.981 25.9766C37.9679 26.5462 33.0119 27.3722 28.1128 28.4546C23.2137 29.5369 18.4855 30.8472 13.9282 32.3853C9.37093 33.9233 5.18392 35.6608 1.36719 37.5977V9.65576C9.22852 6.92139 17.9443 4.64274 27.5146 2.81982C37.1419 0.939941 47.2819 0 57.9346 0C67.9036 0 76.8188 0.882975 84.6802 2.64893C92.5415 4.41488 99.1781 6.97835 104.59 10.3394C110.059 13.6434 114.217 17.688 117.065 22.4731C119.971 27.2013 121.423 32.5562 121.423 38.5376C121.423 41.8416 121.053 44.9463 120.312 47.8516C119.629 50.6999 118.376 53.4912 116.553 56.2256C114.73 58.96 112.252 61.7228 109.119 64.5142C106.042 67.2485 102.112 70.1538 97.3267 73.23C92.5985 76.3062 86.9303 79.6387 80.3223 83.2275C73.7142 86.7594 66.0238 90.6901 57.251 95.0195H123.901V120.398H0Z" 
+                        />
+                    </svg>
+                </div>
+        
+                <p class="value-item-title">Scalable Infrastructure</p>
+                <p class="value-item-text">Built to grow with your business without rebuilding systems</p>
+                <p class="value-item-suptext">→ Designed for long-term expansion</p>
+            </div>
+          </div>
+
+          <div class="value-item">
+            <img src="/assets/value3-DcSa2tJ8.png" alt="" class="value-bg">
+        
+            <div class="value-inner">
+                <div class="value-num">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="121" height="124" viewBox="0 0 121 124" fill="none">
+                        <defs>
+                            <linearGradient id="valueNumGradient" x1="0.0791205" y1="0.397944" x2="23.8854" y2="142.96" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#09BBFF"/>
+                                <stop offset="0.495192" stop-color="#4B54FF"/>
+                                <stop offset="1" stop-color="#6B22FF"/>
+                            </linearGradient>
+                        </defs>
+        
+                        <path 
+                            class="value-num-default"
+                            d="M87.3291 57.7637C93.1966 59.0739 98.2096 60.6689 102.368 62.5488C106.527 64.3717 109.916 66.508 112.537 68.9575C115.157 71.3501 117.065 74.056 118.262 77.0752C119.458 80.0374 120.056 83.2845 120.056 86.8164C120.056 92.9688 118.376 98.3521 115.015 102.966C111.711 107.581 107.096 111.426 101.172 114.502C95.3044 117.521 88.3545 119.771 80.3223 121.252C72.29 122.791 63.6027 123.56 54.2603 123.56C47.994 123.56 42.2404 123.275 36.9995 122.705C31.7586 122.192 26.9165 121.509 22.4731 120.654C18.0868 119.8 14.0422 118.86 10.3394 117.834C6.63656 116.752 3.1901 115.67 0 114.587V86.4746C3.5319 88.3545 7.49105 90.035 11.8774 91.5161C16.3208 92.9972 20.8781 94.279 25.5493 95.3613C30.2775 96.3867 35.0342 97.1842 39.8193 97.7539C44.6045 98.2666 49.1333 98.5229 53.4058 98.5229C61.1532 98.5229 67.334 98.0672 71.9482 97.1558C76.5625 96.1873 80.0659 94.9911 82.4585 93.5669C84.8511 92.0858 86.3892 90.5192 87.0728 88.8672C87.8133 87.2152 88.1836 85.6486 88.1836 84.1675C88.1836 81.661 87.3576 79.4963 85.7056 77.6733C84.1105 75.8504 81.2622 74.3408 77.1606 73.1445C73.1161 71.9482 67.6188 71.0653 60.6689 70.4956C53.7191 69.869 44.9463 69.5272 34.3506 69.4702V46.228C43.9779 46.228 51.9531 46.0286 58.2764 45.6299C64.6566 45.2311 69.755 44.6045 73.5718 43.75C77.3885 42.8955 80.0659 41.7847 81.604 40.4175C83.1991 39.0503 83.9966 37.3698 83.9966 35.376C83.9966 34.7493 83.8827 34.0658 83.6548 33.3252C83.4839 32.5846 83.0566 31.8156 82.373 31.0181C81.6895 30.2205 80.6925 29.4515 79.3823 28.7109C78.0721 27.9704 76.2777 27.3153 73.999 26.7456C71.7204 26.1759 68.9006 25.7202 65.5396 25.3784C62.1785 25.0366 58.134 24.8657 53.4058 24.8657C48.9624 24.8657 44.4336 25.0936 39.8193 25.5493C35.262 26.005 30.7902 26.6886 26.4038 27.6001C22.0174 28.5116 17.7734 29.6224 13.6719 30.9326C9.57031 32.2428 5.78206 33.7809 2.30713 35.5469V7.51953C10.0545 4.95605 18.3431 3.07617 27.1729 1.87988C36.0026 0.626628 44.7469 0 53.4058 0C61.8937 0 69.8975 0.569661 77.417 1.70898C84.9935 2.84831 91.6016 4.67122 97.2412 7.17773C102.938 9.62728 107.438 12.8459 110.742 16.8335C114.046 20.7642 115.698 25.5493 115.698 31.189C115.698 34.2082 115.157 37.085 114.075 39.8193C113.049 42.4967 111.397 44.9748 109.119 47.2534C106.84 49.5321 103.906 51.5544 100.317 53.3203C96.7285 55.0863 92.3991 56.5674 87.3291 57.7637Z" 
+                        />
+        
+                        <path 
+                            class="value-num-gradient"
+                            d="M87.3291 57.7637C93.1966 59.0739 98.2096 60.6689 102.368 62.5488C106.527 64.3717 109.916 66.508 112.537 68.9575C115.157 71.3501 117.065 74.056 118.262 77.0752C119.458 80.0374 120.056 83.2845 120.056 86.8164C120.056 92.9688 118.376 98.3521 115.015 102.966C111.711 107.581 107.096 111.426 101.172 114.502C95.3044 117.521 88.3545 119.771 80.3223 121.252C72.29 122.791 63.6027 123.56 54.2603 123.56C47.994 123.56 42.2404 123.275 36.9995 122.705C31.7586 122.192 26.9165 121.509 22.4731 120.654C18.0868 119.8 14.0422 118.86 10.3394 117.834C6.63656 116.752 3.1901 115.67 0 114.587V86.4746C3.5319 88.3545 7.49105 90.035 11.8774 91.5161C16.3208 92.9972 20.8781 94.279 25.5493 95.3613C30.2775 96.3867 35.0342 97.1842 39.8193 97.7539C44.6045 98.2666 49.1333 98.5229 53.4058 98.5229C61.1532 98.5229 67.334 98.0672 71.9482 97.1558C76.5625 96.1873 80.0659 94.9911 82.4585 93.5669C84.8511 92.0858 86.3892 90.5192 87.0728 88.8672C87.8133 87.2152 88.1836 85.6486 88.1836 84.1675C88.1836 81.661 87.3576 79.4963 85.7056 77.6733C84.1105 75.8504 81.2622 74.3408 77.1606 73.1445C73.1161 71.9482 67.6188 71.0653 60.6689 70.4956C53.7191 69.869 44.9463 69.5272 34.3506 69.4702V46.228C43.9779 46.228 51.9531 46.0286 58.2764 45.6299C64.6566 45.2311 69.755 44.6045 73.5718 43.75C77.3885 42.8955 80.0659 41.7847 81.604 40.4175C83.1991 39.0503 83.9966 37.3698 83.9966 35.376C83.9966 34.7493 83.8827 34.0658 83.6548 33.3252C83.4839 32.5846 83.0566 31.8156 82.373 31.0181C81.6895 30.2205 80.6925 29.4515 79.3823 28.7109C78.0721 27.9704 76.2777 27.3153 73.999 26.7456C71.7204 26.1759 68.9006 25.7202 65.5396 25.3784C62.1785 25.0366 58.134 24.8657 53.4058 24.8657C48.9624 24.8657 44.4336 25.0936 39.8193 25.5493C35.262 26.005 30.7902 26.6886 26.4038 27.6001C22.0174 28.5116 17.7734 29.6224 13.6719 30.9326C9.57031 32.2428 5.78206 33.7809 2.30713 35.5469V7.51953C10.0545 4.95605 18.3431 3.07617 27.1729 1.87988C36.0026 0.626628 44.7469 0 53.4058 0C61.8937 0 69.8975 0.569661 77.417 1.70898C84.9935 2.84831 91.6016 4.67122 97.2412 7.17773C102.938 9.62728 107.438 12.8459 110.742 16.8335C114.046 20.7642 115.698 25.5493 115.698 31.189C115.698 34.2082 115.157 37.085 114.075 39.8193C113.049 42.4967 111.397 44.9748 109.119 47.2534C106.84 49.5321 103.906 51.5544 100.317 53.3203C96.7285 55.0863 92.3991 56.5674 87.3291 57.7637Z" 
+                        />
+                    </svg>
+                </div>
+        
+                <p class="value-item-title">Operational Stability</p>
+                <p class="value-item-text">Reliable infrastructure and support for uninterrupted operations</p>
+                <p class="value-item-suptext">→ Consistent performance at every stage</p>
+            </div>
+          </div>
+
+          <div class="value-item">
+            <img src="/assets/value4-Bt7_uNmr.png" alt="" class="value-bg" style="top: -8px;">
+        
+            <div class="value-inner">
+                <div class="value-num">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="133" height="118" viewBox="0 0 133 118" fill="none">
+                        <defs>
+                            <linearGradient id="valueNumGradient" x1="0.0791205" y1="0.397944" x2="23.8854" y2="142.96" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#09BBFF"/>
+                                <stop offset="0.495192" stop-color="#4B54FF"/>
+                                <stop offset="1" stop-color="#6B22FF"/>
+                            </linearGradient>
+                        </defs>
+        
+                        <path 
+                            class="value-num-default"
+                            d="M106.213 94.3359V117.407H74.7681V94.3359H0V69.2993L67.2485 0H106.213V69.2993H132.874V94.3359H106.213ZM74.7681 27.6001L34.3506 69.2993H74.7681V27.6001Z" 
+                        />
+        
+                        <path 
+                            class="value-num-gradient"
+                            d="M106.213 94.3359V117.407H74.7681V94.3359H0V69.2993L67.2485 0H106.213V69.2993H132.874V94.3359H106.213ZM74.7681 27.6001L34.3506 69.2993H74.7681V27.6001Z" 
+                        />
+                    </svg>
+                </div>
+        
+                <p class="value-item-title">Strategic Alignment</p>
+                <p class="value-item-text">All actions aligned with clear goals and measurable outcomes</p>
+                <p class="value-item-suptext">→ Strategy that drives real 
+                  results</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="services">
+      <div class="services__pin">
+        <div class="container">
+          <div class="services__grid">
+            <aside class="services__left">
+              <h2 class="services__heading">Services</h2>
+              <p class="services__lead">
+                Creating a strong foundation for long-term growth begins with a clear and well-defined brand. This includes positioning, identity development, and messaging that reflects the business and resonates with its target audience. The focus is on building a brand that is both distinctive and adaptable to future expansion
+              </p>
+              <img src="/assets/services-C3WGJC5t.png" alt="" class="services__visual" width="800" height="532">
+            </aside>
+            <div class="services__right">
+              <div class="services__scroller">
+              <div class="services__list" role="list">
+                <article class="services-item is-active" data-service="0" aria-current="true" role="listitem">
+                  <div class="services-item__inner">
+                    <div class="services-item__summary">
+                      <span class="services-item__index">01/06</span>
+                      <span class="services-item__label">Brand strategy</span>
+                    </div>
+                    <div class="services-item__expand">
+                      <div class="services-item__decor" aria-hidden="true"><img src="/assets/service1-Dg8--oik.png" alt=""></div>
+                      <div class="services-item__head">
+                        <div class="services-item__icon" aria-hidden="true">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                            <path d="M45.8332 25H41.6665M45.8332 25C45.8332 36.5059 36.5058 45.8333 24.9998 45.8333M45.8332 25C45.8332 13.4941 36.5058 4.16666 24.9998 4.16666M39.7312 39.7314L36.785 36.7851M8.33317 25H4.1665M4.1665 25C4.1665 36.5059 13.4939 45.8333 24.9998 45.8333M4.1665 25C4.1665 13.4941 13.4939 4.16666 24.9998 4.16666M13.2147 13.2149L10.2684 10.2686M24.9998 8.33332V4.16666M36.785 13.2149L39.7312 10.2686M24.9998 45.8333V41.6667M10.2684 39.7314L13.2147 36.7851M24.9998 16.6667L33.3332 25L24.9998 33.3333L16.6665 25L24.9998 16.6667Z" stroke="url(#paint0_linear_62_187)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <defs>
+                              <linearGradient id="paint0_linear_62_187" x1="4.1665" y1="45.8333" x2="48.4756" y2="41.6406" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#09BBFF"/>
+                                <stop offset="0.495192" stop-color="#4B54FF"/>
+                                <stop offset="1" stop-color="#6B22FF"/>
+                              </linearGradient>
+                            </defs>
+                          </svg>
+                        </div>
+                        <div>
+                          <p class="services-item__tag">Brand strategy</p>
+                          <h3 class="services-item__title">Clarity</h3>
+                        </div>
+                      </div>
+                      <ul class="services-item__rows">
+                        <li class="services-item__row"><span class="services-item__row-label">Positioning</span><p class="services-item__row-text">Clear market direction</p></li>
+                        <li class="services-item__row"><span class="services-item__row-label">Identity</span><p class="services-item__row-text">Distinct and recognizable</p></li>
+                        <li class="services-item__row"><span class="services-item__row-label">Messaging</span><p class="services-item__row-text">Consistent and meaningful</p></li>
+                      </ul>
+                      <div class="services-item__foot"><span class="services-item__index"><span class="strong">01</span>/06</span></div>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="services-item" data-service="1" role="listitem">
+                  <div class="services-item__inner">
+                    <div class="services-item__summary">
+                      <span class="services-item__index">02/06</span>
+                      <span class="services-item__label">Systems &amp; growth</span>
+                    </div>
+                    <div class="services-item__expand">
+                      <div class="services-item__decor" aria-hidden="true"><img src="/assets/service1-Dg8--oik.png" alt=""></div>
+                      <div class="services-item__head">
+                        <div class="services-item__icon" aria-hidden="true">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                            <path d="M43.75 43.75H9.58333C8.41656 43.75 7.83317 43.75 7.38752 43.5229C6.99552 43.3232 6.67681 43.0045 6.47707 42.6125C6.25 42.1668 6.25 41.5834 6.25 40.4167V6.25M43.75 14.5833L32.4285 25.9048C32.016 26.3173 31.8097 26.5236 31.5719 26.6009C31.3627 26.6689 31.1373 26.6689 30.9281 26.6009C30.6903 26.5236 30.484 26.3173 30.0715 25.9048L26.1785 22.0118C25.766 21.5993 25.5597 21.3931 25.3219 21.3158C25.1127 21.2478 24.8873 21.2478 24.6781 21.3158C24.4403 21.3931 24.234 21.5993 23.8215 22.0118L14.5833 31.25M43.75 22.9167V14.5833H35.4167" stroke="url(#paint0_linear_138_3922)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <defs>
+                              <linearGradient id="paint0_linear_138_3922" x1="6.5407" y1="40.7197" x2="46.594" y2="37.0174" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#51C9FF"/>
+                                <stop offset="0.495192" stop-color="#4273F7"/>
+                                <stop offset="1" stop-color="#8F56FF"/>
+                              </linearGradient>
+                            </defs>
+                          </svg>
+                        </div>
+                        <div>
+                          <p class="services-item__tag">Systems &amp; growth</p>
+                          <h3 class="services-item__title">Growth</h3>
+                        </div>
+                      </div>
+                      <ul class="services-item__rows">
+                        <li class="services-item__row"><span class="services-item__row-label">Targeting</span><p class="services-item__row-text">Reach the right audience</p></li>
+                        <li class="services-item__row"><span class="services-item__row-label">Performance</span><p class="services-item__row-text">Campaigns focused on results</p></li>
+                        <li class="services-item__row"><span class="services-item__row-label">Conversion</span><p class="services-item__row-text">Drive engagement and growth</p></li>
+                      </ul>
+                      <div class="services-item__foot"><span class="services-item__index"><span class="strong">02</span>/06</span></div>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="services-item" data-service="2" role="listitem">
+                  <div class="services-item__inner">
+                    <div class="services-item__summary">
+                      <span class="services-item__index">03/06</span>
+                      <span class="services-item__label">MARKETING CAMPAIGNS</span>
+                    </div>
+                    <div class="services-item__expand">
+                      <div class="services-item__decor" aria-hidden="true"><img src="/assets/service1-Dg8--oik.png" alt=""></div>
+                      <div class="services-item__head">
+                        <div class="services-item__icon" aria-hidden="true">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                            <path d="M45.8337 25H41.667M45.8337 25C45.8337 36.506 36.5063 45.8334 25.0003 45.8334M45.8337 25C45.8337 13.4941 36.5063 4.16669 25.0003 4.16669M39.7317 39.7314L36.7854 36.7851M8.33366 25H4.16699M4.16699 25C4.16699 36.506 13.4944 45.8334 25.0003 45.8334M4.16699 25C4.16699 13.4941 13.4944 4.16669 25.0003 4.16669M13.2152 13.2149L10.2689 10.2686M25.0003 8.33335V4.16669M36.7854 13.2149L39.7317 10.2686M25.0003 45.8334V41.6667M10.2689 39.7314L13.2152 36.7851M25.0003 16.6667L33.3337 25L25.0003 33.3334L16.667 25L25.0003 16.6667Z" stroke="url(#paint0_linear_138_4056)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <defs>
+                              <linearGradient id="paint0_linear_138_4056" x1="4.16699" y1="45.8333" x2="48.4761" y2="41.6406" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#09BBFF"/>
+                                <stop offset="0.495192" stop-color="#4B54FF"/>
+                                <stop offset="1" stop-color="#6B22FF"/>
+                              </linearGradient>
+                            </defs>
+                          </svg>
+                        </div>
+                        <div>
+                          <p class="services-item__tag">BUSINESS CONSULTING</p>
+                          <h3 class="services-item__title">DIRECTION</h3>
+                        </div>
+                      </div>
+                      <ul class="services-item__rows">
+                        <li class="services-item__row"><span class="services-item__row-label">Analysis</span><p class="services-item__row-text">Understand business potential</p></li>
+                        <li class="services-item__row"><span class="services-item__row-label">Opportunities</span><p class="services-item__row-text">Identify growth areas</p></li>
+                        <li class="services-item__row"><span class="services-item__row-label">Strategy</span><p class="services-item__row-text">Actionable long-term planning</p></li>
+                      </ul>
+                      <div class="services-item__foot"><span class="services-item__index"><span class="strong">03</span>/06</span></div>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="services-item" data-service="3" role="listitem">
+                  <div class="services-item__inner">
+                    <div class="services-item__summary">
+                      <span class="services-item__index">04/06</span>
+                      <span class="services-item__label">BRAND PROTECTION</span>
+                    </div>
+                    <div class="services-item__expand">
+                      <div class="services-item__decor" aria-hidden="true"><img src="/assets/service1-Dg8--oik.png" alt=""></div>
+                      <div class="services-item__head">
+                        <div class="services-item__icon" aria-hidden="true">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                            <path d="M23.5455 45.031C24.0068 45.3001 24.2374 45.4346 24.5628 45.5044C24.8154 45.5586 25.1839 45.5586 25.4365 45.5044C25.762 45.4346 25.9926 45.3001 26.4538 45.031C30.5123 42.6633 41.6663 35.2259 41.6663 25V15.0367C41.6663 13.371 41.6663 12.5382 41.3939 11.8223C41.1533 11.1899 40.7622 10.6256 40.2546 10.1782C39.6799 9.67176 38.9001 9.37934 37.3405 8.79449L26.1701 4.60559C25.737 4.44317 25.5204 4.36196 25.2976 4.32977C25.1 4.30121 24.8993 4.30121 24.7017 4.32977C24.4789 4.36196 24.2624 4.44317 23.8293 4.60559L12.6589 8.79449C11.0993 9.37934 10.3195 9.67176 9.7448 10.1782C9.23714 10.6256 8.84608 11.1899 8.60543 11.8223C8.33301 12.5382 8.33301 13.371 8.33301 15.0367V25C8.33301 35.2259 19.4871 42.6633 23.5455 45.031Z" stroke="url(#paint0_linear_138_3826)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <defs>
+                              <linearGradient id="paint0_linear_138_3826" x1="8.59141" y1="42.2128" x2="44.2992" y2="39.5447" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#51C9FF"/>
+                                <stop offset="0.495192" stop-color="#4273F7"/>
+                                <stop offset="1" stop-color="#8F56FF"/>
+                              </linearGradient>
+                            </defs>
+                          </svg>
+                        </div>
+                        <div>
+                          <p class="services-item__tag">BRAND PROTECTION</p>
+                          <h3 class="services-item__title">SECURITY</h3>
+                        </div>
+                      </div>
+                      <ul class="services-item__rows">
+                        <li class="services-item__row"><span class="services-item__row-label">Trademark</span><p class="services-item__row-text">Secure brand ownership</p></li>
+                        <li class="services-item__row"><span class="services-item__row-label">Compliance</span><p class="services-item__row-text">Meet legal requirements</p></li>
+                        <li class="services-item__row"><span class="services-item__row-label">Protection</span><p class="services-item__row-text">Safeguard brand assetsl</p></li>
+                      </ul>
+                      <div class="services-item__foot"><span class="services-item__index"><span class="strong">04</span>/06</span></div>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="services-item" data-service="4" role="listitem">
+                  <div class="services-item__inner">
+                    <div class="services-item__summary">
+                      <span class="services-item__index">05/06</span>
+                      <span class="services-item__label">CONSULTING</span>
+                    </div>
+                    <div class="services-item__expand">
+                      <div class="services-item__decor" aria-hidden="true"><img src="/assets/service1-Dg8--oik.png" alt=""></div>
+                      <div class="services-item__head">
+                        <div class="services-item__icon" aria-hidden="true">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                            <path d="M25.0003 31.2501C28.4521 31.2501 31.2503 28.4519 31.2503 25.0001C31.2503 21.5483 28.4521 18.7501 25.0003 18.7501C21.5485 18.7501 18.7503 21.5483 18.7503 25.0001C18.7503 28.4519 21.5485 31.2501 25.0003 31.2501Z" stroke="url(#paint0_linear_138_3995)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M39.0155 30.6819C38.7634 31.2531 38.6882 31.8868 38.7996 32.5012C38.911 33.1156 39.2039 33.6825 39.6405 34.1289L39.7541 34.2425C40.1063 34.5943 40.3857 35.0121 40.5763 35.4719C40.7669 35.9317 40.8651 36.4246 40.8651 36.9224C40.8651 37.4202 40.7669 37.9131 40.5763 38.373C40.3857 38.8328 40.1063 39.2506 39.7541 39.6024C39.4023 39.9545 38.9846 40.2339 38.5247 40.4246C38.0649 40.6152 37.572 40.7133 37.0742 40.7133C36.5764 40.7133 36.0835 40.6152 35.6237 40.4246C35.1638 40.2339 34.7461 39.9545 34.3943 39.6024L34.2806 39.4887C33.8343 39.0521 33.2673 38.7592 32.653 38.6478C32.0386 38.5364 31.4049 38.6116 30.8337 38.8637C30.2735 39.1038 29.7958 39.5024 29.4592 40.0106C29.1227 40.5187 28.9422 41.1141 28.9397 41.7236V42.0455C28.9397 43.0501 28.5406 44.0136 27.8303 44.724C27.1199 45.4343 26.1565 45.8334 25.1518 45.8334C24.1472 45.8334 23.1838 45.4343 22.4734 44.724C21.763 44.0136 21.364 43.0501 21.364 42.0455V41.8751C21.3493 41.2482 21.1464 40.6402 20.7816 40.1302C20.4168 39.6202 19.907 39.2317 19.3185 39.0152C18.7473 38.7631 18.1136 38.6879 17.4992 38.7993C16.8848 38.9107 16.3179 39.2036 15.8715 39.6402L15.7579 39.7539C15.4061 40.1061 14.9884 40.3854 14.5285 40.5761C14.0687 40.7667 13.5758 40.8648 13.078 40.8648C12.5802 40.8648 12.0873 40.7667 11.6274 40.5761C11.1676 40.3854 10.7498 40.1061 10.3981 39.7539C10.0459 39.4021 9.76648 38.9843 9.57586 38.5245C9.38523 38.0646 9.28712 37.5717 9.28712 37.0739C9.28712 36.5762 9.38523 36.0833 9.57586 35.6234C9.76648 35.1636 10.0459 34.7458 10.3981 34.394L10.5117 34.2804C10.9483 33.834 11.2412 33.2671 11.3526 32.6527C11.464 32.0383 11.3888 31.4047 11.1367 30.8334C10.8966 30.2732 10.498 29.7955 9.98984 29.459C9.48172 29.1225 8.88629 28.9419 8.27684 28.9395H7.95487C6.95026 28.9395 5.9868 28.5404 5.27644 27.83C4.56607 27.1197 4.16699 26.1562 4.16699 25.1516C4.16699 24.147 4.56607 23.1835 5.27644 22.4732C5.9868 21.7628 6.95026 21.3637 7.95487 21.3637H8.12533C8.75221 21.3491 9.36018 21.1461 9.87021 20.7814C10.3802 20.4166 10.7687 19.9068 10.9852 19.3183C11.2373 18.747 11.3125 18.1134 11.2011 17.499C11.0897 16.8846 10.7968 16.3177 10.3602 15.8713L10.2465 15.7577C9.89435 15.4059 9.61496 14.9881 9.42434 14.5283C9.23372 14.0684 9.1356 13.5755 9.1356 13.0777C9.1356 12.5799 9.23372 12.087 9.42434 11.6272C9.61496 11.1674 9.89435 10.7496 10.2465 10.3978C10.5983 10.0456 11.0161 9.76624 11.4759 9.57561C11.9358 9.38499 12.4287 9.28687 12.9265 9.28687C13.4242 9.28687 13.9172 9.38499 14.377 9.57561C14.8368 9.76624 15.2546 10.0456 15.6064 10.3978L15.72 10.5114C16.1664 10.9481 16.7333 11.241 17.3477 11.3524C17.9621 11.4638 18.5958 11.3886 19.167 11.1364H19.3185C19.8787 10.8964 20.3564 10.4977 20.6929 9.9896C21.0294 9.48147 21.21 8.88604 21.2124 8.2766V7.95463C21.2124 6.95002 21.6115 5.98656 22.3219 5.27619C23.0323 4.56583 23.9957 4.16675 25.0003 4.16675C26.0049 4.16675 26.9684 4.56583 27.6788 5.27619C28.3891 5.98656 28.7882 6.95002 28.7882 7.95463V8.12508C28.7906 8.73453 28.9712 9.32996 29.3077 9.83809C29.6442 10.3462 30.122 10.7448 30.6821 10.9849C31.2534 11.237 31.8871 11.3122 32.5014 11.2008C33.1158 11.0894 33.6828 10.7966 34.1291 10.3599L34.2428 10.2463C34.5945 9.89411 35.0123 9.61472 35.4721 9.4241C35.932 9.23348 36.4249 9.13536 36.9227 9.13536C37.4205 9.13536 37.9134 9.23348 38.3732 9.4241C38.8331 9.61472 39.2508 9.89411 39.6026 10.2463C39.9548 10.5981 40.2342 11.0158 40.4248 11.4757C40.6154 11.9355 40.7135 12.4284 40.7135 12.9262C40.7135 13.424 40.6154 13.9169 40.4248 14.3768C40.2342 14.8366 39.9548 15.2544 39.6026 15.6061L39.489 15.7198C39.0523 16.1661 38.7594 16.7331 38.648 17.3475C38.5366 17.9618 38.6119 18.5955 38.864 19.1667V19.3183C39.104 19.8784 39.5027 20.3562 40.0108 20.6927C40.5189 21.0292 41.1144 21.2098 41.7238 21.2122H42.0458C43.0504 21.2122 44.0139 21.6113 44.7242 22.3216C45.4346 23.032 45.8337 23.9955 45.8337 25.0001C45.8337 26.0047 45.4346 26.9682 44.7242 27.6785C44.0139 28.3889 43.0504 28.788 42.0458 28.788H41.8753C41.2659 28.7904 40.6705 28.971 40.1623 29.3075C39.6542 29.644 39.2556 30.1217 39.0155 30.6819Z" stroke="url(#paint1_linear_138_3995)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <defs>
+                              <linearGradient id="paint0_linear_138_3995" x1="4.48999" y1="42.4664" x2="48.9936" y2="38.3527" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#51C9FF"/>
+                                <stop offset="0.495192" stop-color="#4273F7"/>
+                                <stop offset="1" stop-color="#8F56FF"/>
+                              </linearGradient>
+                              <linearGradient id="paint1_linear_138_3995" x1="4.48999" y1="42.4664" x2="48.9936" y2="38.3527" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#51C9FF"/>
+                                <stop offset="0.495192" stop-color="#4273F7"/>
+                                <stop offset="1" stop-color="#8F56FF"/>
+                              </linearGradient>
+                            </defs>
+                          </svg>
+                        </div>
+                        <div>
+                          <p class="services-item__tag">AUTOMATION & INFRASTRUCTURE</p>
+                          <h3 class="services-item__title">SCALABILITY</h3>
+                        </div>
+                      </div>
+                      <ul class="services-item__rows">
+                        <li class="services-item__row"><span class="services-item__row-label">Systems</span><p class="services-item__row-text">Build scalable operations</p></li>
+                        <li class="services-item__row"><span class="services-item__row-label">Automation</span><p class="services-item__row-text">Improve efficiency and workflows</p></li>
+                        <li class="services-item__row"><span class="services-item__row-label">Integration</span><p class="services-item__row-text">Connect tools and data</p></li>
+                      </ul>
+                      <div class="services-item__foot"><span class="services-item__index"><span class="strong">05</span>/06</span></div>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="services-item" data-service="5" role="listitem">
+                  <div class="services-item__inner">
+                    <div class="services-item__summary">
+                      <span class="services-item__index">06/06</span>
+                      <span class="services-item__label">Tech support</span>
+                    </div>
+                    <div class="services-item__expand">
+                      <div class="services-item__decor" aria-hidden="true"><img src="/assets/service1-Dg8--oik.png" alt=""></div>
+                      <div class="services-item__head">
+                        <div class="services-item__icon" aria-hidden="true">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                            <path d="M12.5003 12.5001L21.8753 21.8751M12.5003 12.5001H6.25033L4.16699 6.25008L6.25033 4.16675L12.5003 6.25008V12.5001ZM40.1232 5.71052L34.649 11.1847C33.824 12.0098 33.4115 12.4223 33.2569 12.898C33.121 13.3164 33.121 13.7671 33.2569 14.1855C33.4115 14.6612 33.824 15.0737 34.649 15.8988L35.1433 16.3931C35.9683 17.2181 36.3809 17.6306 36.8565 17.7852C37.275 17.9211 37.7257 17.9211 38.1441 17.7852C38.6198 17.6306 39.0323 17.2181 39.8574 16.3931L44.978 11.2724C45.5295 12.6144 45.8337 14.0842 45.8337 15.6251C45.8337 21.9533 40.7036 27.0834 34.3753 27.0834C33.6124 27.0834 32.8669 27.0089 32.1457 26.8666C31.1329 26.6669 30.6265 26.567 30.3195 26.5976C29.9931 26.6301 29.8322 26.679 29.5431 26.8338C29.271 26.9794 28.9982 27.2522 28.4525 27.7979L13.542 42.7084C11.8161 44.4343 9.01788 44.4343 7.292 42.7084C5.56611 40.9825 5.56611 38.1843 7.292 36.4584L22.2025 21.5479C22.7482 21.0022 23.021 20.7294 23.1666 20.4573C23.3214 20.1682 23.3703 20.0073 23.4028 19.6809C23.4334 19.3739 23.3335 18.8675 23.1338 17.8547C22.9916 17.1335 22.917 16.388 22.917 15.6251C22.917 9.29682 28.0471 4.16675 34.3753 4.16675C36.4701 4.16675 38.4336 4.72888 40.1232 5.71052ZM25.0004 31.25L36.4587 42.7082C38.1845 44.4341 40.9828 44.4341 42.7086 42.7082C44.4345 40.9823 44.4345 38.1841 42.7086 36.4582L33.2822 27.032C32.6149 26.9688 31.9643 26.8484 31.3353 26.6758C30.5247 26.4533 29.6356 26.6148 29.0413 27.2091L25.0004 31.25Z" stroke="url(#paint0_linear_138_4019)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <defs>
+                              <linearGradient id="paint0_linear_138_4019" x1="4.48999" y1="40.7837" x2="48.9582" y2="36.4844" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#51C9FF"/>
+                                <stop offset="0.495192" stop-color="#4273F7"/>
+                                <stop offset="1" stop-color="#8F56FF"/>
+                              </linearGradient>
+                            </defs>
+                          </svg>
+                        </div>
+                        <div>
+                          <p class="services-item__tag">Tech support</p>
+                          <h3 class="services-item__title">Stability</h3>
+                        </div>
+                      </div>
+                      <ul class="services-item__rows">
+                        <li class="services-item__row"><span class="services-item__row-label">Maintenance</span><p class="services-item__row-text">Keep systems operational</p></li>
+                        <li class="services-item__row"><span class="services-item__row-label">Support</span><p class="services-item__row-text">Resolve technical issues fast</p></li>
+                        <li class="services-item__row"><span class="services-item__row-label">Reliability</span><p class="services-item__row-text">Ensure uninterrupted performance</p></li>
+                      </ul>
+                      <div class="services-item__foot"><span class="services-item__index"><span class="strong">06</span>/06</span></div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              </div>
+              <nav class="services__pager" aria-label="Service slides">
+                <button type="button" class="services__dot is-active" data-slide="0" aria-label="Service 1 of 6" aria-current="true"></button>
+                <button type="button" class="services__dot" data-slide="1" aria-label="Service 2 of 6"></button>
+                <button type="button" class="services__dot" data-slide="2" aria-label="Service 3 of 6"></button>
+                <button type="button" class="services__dot" data-slide="3" aria-label="Service 4 of 6"></button>
+                <button type="button" class="services__dot" data-slide="4" aria-label="Service 5 of 6"></button>
+                <button type="button" class="services__dot" data-slide="5" aria-label="Service 6 of 6"></button>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="process">
+      <div class="process-right">
+        <img src="/assets/process-img-tg9ECNE_.png" alt="">
+      </div>
+      <div class="container">
+        <div class="process-inner">
+          
+            <div class="process-content">
+              <h3 class="process-title">Process</h3>
+              <p class="process-text">A structured approach ensures that every stage of development and growth is aligned and efficient</p>
+            </div>
+            <div class="process-list">
+              <div class="process-item">
+                <div class="process-item-left">
+                  <div class="process-item-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <path d="M21 21L16.65 16.65M19 11C19 15.4183 15.4183 19 11 19C6.58172 19 3 15.4183 3 11C3 6.58172 6.58172 3 11 3C15.4183 3 19 6.58172 19 11Z" stroke="url(#paint0_linear_86_834)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <defs>
+                        <linearGradient id="paint0_linear_86_834" x1="3.13954" y1="19.5455" x2="21.3727" y2="17.7397" gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#51C9FF"/>
+                          <stop offset="0.495192" stop-color="#4273F7"/>
+                          <stop offset="1" stop-color="#8F56FF"/>
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="process-item-num">01</div>
+                </div>
+                <div class="process-item-content">
+                  <p class="process-item-title">Discovery and Analysis</p>
+                  <p class="process-item-text">Understanding the business model, objectives, and market environment to define the <br> right direction</p>
+                </div>
+              </div>
+              <div class="process-item">
+                <div class="process-item-left">
+                  <div class="process-item-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <path d="M16 8V5L19 2L20 4L22 5L19 8H16ZM16 8L12 11.9999M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2M17 12C17 14.7614 14.7614 17 12 17C9.23858 17 7 14.7614 7 12C7 9.23858 9.23858 7 12 7" stroke="url(#paint0_linear_86_896)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <defs>
+                        <linearGradient id="paint0_linear_86_896" x1="2.15504" y1="20.3838" x2="22.4141" y2="18.3775" gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#51C9FF"/>
+                          <stop offset="0.495192" stop-color="#4273F7"/>
+                          <stop offset="1" stop-color="#8F56FF"/>
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="process-item-num">02</div>
+                </div>
+                <div class="process-item-content">
+                  <p class="process-item-title">Brand and Strategy Development</p>
+                  <p class="process-item-text">Establishing identity, positioning, and messaging that form the foundation <br> of all future actions</p>
+                </div>
+              </div>
+              <div class="process-item">
+                <div class="process-item-left">
+                  <div class="process-item-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <path d="M12.9996 10.9999L3.49964 20.4999M14.0181 3.53838C15.2361 4.34658 16.4068 5.29941 17.5008 6.3934C18.6042 7.49683 19.564 8.67831 20.3767 9.90766M9.2546 7.89605L6.37973 6.93776C6.04865 6.8274 5.68398 6.89763 5.41756 7.12306L2.56041 9.54065C1.97548 10.0356 2.14166 10.9775 2.86064 11.2424L5.56784 12.2398M11.6807 18.3524L12.6781 21.0596C12.943 21.7786 13.8849 21.9448 14.3798 21.3599L16.7974 18.5027C17.0228 18.2363 17.0931 17.8716 16.9827 17.5405L16.0244 14.6657M19.3482 2.27063L14.4418 3.08838C13.9119 3.17668 13.426 3.43709 13.0591 3.82932L6.446 10.8985C4.73185 12.7308 4.77953 15.5924 6.55378 17.3667C8.32803 19.1409 11.1896 19.1886 13.022 17.4744L20.0911 10.8614C20.4834 10.4944 20.7438 10.0085 20.8321 9.47869L21.6498 4.57222C21.8754 3.21858 20.7019 2.04503 19.3482 2.27063Z" stroke="url(#paint0_linear_86_902)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <defs>
+                        <linearGradient id="paint0_linear_86_902" x1="2.357" y1="20.1408" x2="22.0809" y2="18.1874" gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#51C9FF"/>
+                          <stop offset="0.495192" stop-color="#4273F7"/>
+                          <stop offset="1" stop-color="#8F56FF"/>
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="process-item-num">03</div>
+                </div>
+                <div class="process-item-content">
+                  <p class="process-item-title">Execution and Implementation</p>
+                  <p class="process-item-text">Launching campaigns, implementing systems, and activating the brand in the <br> markets</p>
+                </div>
+              </div>
+              <div class="process-item">
+                <div class="process-item-left">
+                  <div class="process-item-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <path d="M3 8L15 8M15 8C15 9.65686 16.3431 11 18 11C19.6569 11 21 9.65685 21 8C21 6.34315 19.6569 5 18 5C16.3431 5 15 6.34315 15 8ZM9 16L21 16M9 16C9 17.6569 7.65685 19 6 19C4.34315 19 3 17.6569 3 16C3 14.3431 4.34315 13 6 13C7.65685 13 9 14.3431 9 16Z" stroke="url(#paint0_linear_86_908)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <defs>
+                        <linearGradient id="paint0_linear_86_908" x1="3.13954" y1="17.8687" x2="21.2578" y2="15.5617" gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#51C9FF"/>
+                          <stop offset="0.495192" stop-color="#4273F7"/>
+                          <stop offset="1" stop-color="#8F56FF"/>
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="process-item-num">04</div>
+                </div>
+                <div class="process-item-content">
+                  <p class="process-item-title">Automation and Optimization</p>
+                  <p class="process-item-text">Enhancing performance through technology, integrations, and data-driven <br> improvements</p>
+                </div>
+              </div>
+              <div class="process-item">
+                <div class="process-item-left">
+                  <div class="process-item-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <path d="M21 21.0001H13M2.5 21.5001L8.04927 19.3657C8.40421 19.2292 8.58168 19.161 8.74772 19.0718C8.8952 18.9927 9.0358 18.9013 9.16804 18.7987C9.31692 18.6831 9.45137 18.5487 9.72028 18.2798L21 7.00006C22.1046 5.89549 22.1046 4.10463 21 3.00006C19.8955 1.89549 18.1046 1.89549 17 3.00006L5.72028 14.2798C5.45138 14.5487 5.31692 14.6831 5.20139 14.832C5.09877 14.9643 5.0074 15.1049 4.92823 15.2523C4.83911 15.4184 4.77085 15.5959 4.63433 15.9508L2.5 21.5001ZM2.5 21.5001L4.55812 16.149C4.7054 15.7661 4.77903 15.5746 4.90534 15.4869C5.01572 15.4103 5.1523 15.3813 5.2843 15.4065C5.43533 15.4354 5.58038 15.5804 5.87048 15.8705L8.12957 18.1296C8.41967 18.4197 8.56472 18.5648 8.59356 18.7158C8.61877 18.8478 8.58979 18.9844 8.51314 19.0947C8.42545 19.2211 8.23399 19.2947 7.85107 19.442L2.5 21.5001Z" stroke="url(#paint0_linear_86_914)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <defs>
+                        <linearGradient id="paint0_linear_86_914" x1="2.64983" y1="19.9382" x2="22.2287" y2="17.9992" gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#51C9FF"/>
+                          <stop offset="0.495192" stop-color="#4273F7"/>
+                          <stop offset="1" stop-color="#8F56FF"/>
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="process-item-num">05</div>
+                </div>
+                <div class="process-item-content">
+                  <p class="process-item-title">Ongoing Support and Maintenance</p>
+                  <p class="process-item-text">Ensuring stability, resolving technical issues, and maintaining consistent <br> performance over time</p>
+                </div>
+              </div>
+            </div>
+          
+          
+        </div>
+      </div>
+    </section>
+
+    <section class="audience-benefits">
+      <div class="audience-benefits__video">
+        <video autoplay muted loop playsinline>
+          <source src="/assets/built-video-less-Bu2_PPEP.mp4" type="video/mp4" />
+        </video>
+      </div>
+
+      <div class="container">
+        <div class="audience-content">
+          <h3 class="audience-title">BUILT FOR GROWTH</h3>
+          <p class="audience-text">A system designed for the right businesses and real results</p>
+        </div>
+        <div class="audience-inner">
+          <div class="info-card info-card--left">
+            <div class="card-content">
+              <p class="eyebrow">WHO WE WORK WITH</p>
+              <h2>TARGET AUDIENCE</h2>
+        
+              <p class="description">
+                Moonsera works with businesses that require a structured and reliable approach to building and managing their brand presence
+              </p>
+        
+              <ul>
+                <li>Companies launching new products</li>
+                <li>Businesses scaling operations</li>
+                <li>Teams aligning marketing and tech</li>
+                <li>Brands seeking long-term stability</li>
+              </ul>
+            </div>
+          </div>
+        
+          <div class="info-card info-card--right">
+            <div class="card-content">
+              <p class="eyebrow">WHAT YOU GET</p>
+              <h2>BENEFITS</h2>
+        
+              <p class="description">
+                Working with Moonsera provides a balanced combination of strategic, operational, and technical advantages
+              </p>
+        
+              <ul>
+                <li>Clear brand positioning</li>
+                <li>Efficient marketing execution</li>
+                <li>Reduced operational risk</li>
+                <li>Scalable systems</li>
+                <li>Reliable technical support</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="build">
+      <div class="container">
+        <div class="build-block">
+          <div class="video">
+            <video autoplay muted loop playsinline preload="auto" style="max-height: 700px; border-radius: 16px;">
+              <source src="/assets/contact-video-less-vT5zXnY0.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="build-inner">
+            <h3 class="build-title">Build a Brand <br> <span class="gradient">That Is Designed to Grow</span></h3>
+            <p class="build-text">A strong brand requires more than visibility. It requires structure, protection, and the right systems to support long-term success. Moonsera provides an integrated approach that brings all of these elements together</p>
+            <button class="build-button hero-button"><span>Get in Touch</span></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="footer-arrow-block-mobile">
+      <a class="arrow" href="#hero">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+        <path d="M12 20V4M18 10L12 4L6 10" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </a>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-inner">
+          <div class="footer-list">
+            <div class="footer-item">
+              <img src="/assets/footer-logo-DoKpEJDi.png" width="176" height="35" alt="" class="footer-logo">
+              <div class="footer-addres-block">
+                <p class="footer-addres-label" style="margin-top: 28px;">Address: </p>
+                <p class="footer-addres">Olviou, 3, Strovolos, 2038, Nicosia, Cyprus </p>
+              </div>
+              
+              <div class="copyright">© 2026 Moonsera Limited. All rights reserved. </div>
+            </div>
+
+            <div class="footer-item">
+              <div class="footer-menu">
+                <a href="#hero" class="footer-link">Home</a>
+                <a href="#about" class="footer-link">About </a>
+                <a href="#services" class="footer-link">Services </a>
+                <a href="#contact" class="footer-link">Contact </a>
+              </div>
+              <div class="footer-addres-block-mobile">
+                <p class="footer-addres-label-mobile" style="margin-top: 28px;">Address: </p>
+                <p class="footer-mobile-text">Olviou, 3, Strovolos, 2038, Nicosia, Cyprus </p>
+              </div>
+
+              <div class="footer-text-block">
+                <p class="footer-addres-label">Email:</p>
+                <a href="mailto:info@moon-sera.com" class="footer-email">info@moon-sera.com </a>
+              </div>
+              
+              <p class="copyright-mobile">© 2026 Moonsera Limited. All rights reserved. </p>
+              <a href="./src/politic.html" class="privacy">Privacy Policy</a>
+            </div>
+            <div class="footer-item" style="width: 7%; justify-content: flex-end;">
+              <div class="footer-arrow-block">
+                <a class="arrow" href="#hero">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 20V4M18 10L12 4L6 10" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script> -->
+    <!-- <script src="https://unpkg.com/swiper@11/swiper-bundle.min.js"></script> -->
+    <script nomodule>!function(){var e=document,t=e.createElement("script");if(!("noModule"in t)&&"onbeforeload"in t){var n=!1;e.addEventListener("beforeload",(function(e){if(e.target===t)n=!0;else if(!e.target.hasAttribute("nomodule")||!n)return;e.preventDefault()}),!0),t.type="module",t.src=".",e.head.appendChild(t),t.remove()}}();</script>
+    <script nomodule crossorigin id="vite-legacy-polyfill" src="/assets/polyfills-legacy-Bdxmy-P9.js"></script>
+    <script nomodule crossorigin id="vite-legacy-entry" data-src="/assets/index-legacy-BbspJs4Q.js">System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))</script>
+  </body>
+</html>
