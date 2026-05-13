@@ -1,0 +1,135 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #050009;
+}
+
+body.noscroll {
+  overflow: hidden;
+}
+
+// section {
+//   margin-top: 200px !important;
+//   position: relative;
+//   @media screen and (max-width: 480px) {
+//     margin-top: 100px !important;   
+//   }
+// }
+
+// .bold {
+//   font-weight: 600;
+// }
+
+a {
+  text-decoration: none;
+}
+
+.video {
+  position: absolute;
+  inset: 0;
+  top: 0;
+  width: 100%;
+  height: max-content;
+  max-height: 1900px;
+  z-index: -1;  
+  @media screen and (max-width: 480px) {
+        height: 90vh;
+  }
+}
+
+// .video::after {
+//   content: "";
+//   position: absolute;
+//   inset: 0;
+//   background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.2) 54.33%, #000 100%);
+//   pointer-events: none;
+// }
+
+.video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+  // z-index: -1;
+}
+
+.dark {
+  color: #000;
+}
+
+.yellow {
+  color: #FFE20E;
+}
+
+.green {
+  color: #5EC776;
+}
+
+.orange {
+  color: #C70C01;
+}
+
+.gradient {
+  background: linear-gradient(85deg, #51C9FF 5.35%, #4273F7 43.39%, #8F56FF 94.52%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.fontweight {
+  font-weight: 700;
+}
+
+
+// .button {
+    
+  
+//   @media screen and (max-width: 480px) {
+      
+//   }
+// }
+  
+//   .button:hover {
+    
+//   }
+  
+//   .button svg path {
+//     transition: all 400ms ease;
+//   }
+  
+//   .button:hover svg path {
+//     stroke: #22206D;
+//   }
+
+
+// .sticky-section {
+//     position: sticky !important;
+//     top: -50%;
+//     // height: 150vh;
+//     @media screen and (max-width: 480px) {
+//         position: unset !important;
+//     }
+//   }
+
+// br {
+//     @media screen and (max-width: 480px) {
+//         display: none;   
+//     }
+// }
+
+// .anim-show {
+//     transform: translate(0px, 120%);
+//     opacity: 0;
+//     transition: all 1000ms ease 0s;
+// }
+
+// .anim-show.-active, .-active .anim-show {
+//     opacity: 1;
+//     transform: translate(0px, 0px);
+// }
+
+// .anim-items {
+//     overflow: hidden;
+// }
