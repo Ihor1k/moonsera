@@ -376,6 +376,7 @@ body.menu-open {
   .popup {
     padding: 16px;
     background: #303030;
+    height: 98%;
     width: 97%;
   }
 }
@@ -420,7 +421,7 @@ body.menu-open {
 }
 @media screen and (max-width: 480px) {
   .popup-context h3 {
-    font-size: 40px;
+    font-size: 36px;
   }
 }
 
@@ -440,6 +441,7 @@ body.menu-open {
 @media screen and (max-width: 480px) {
   .popup-context p {
     margin-bottom: 15px;
+    font-size: 18px;
   }
 }
 
@@ -536,7 +538,7 @@ body.menu-open {
 @media screen and (max-width: 480px) {
   .popup-form textarea {
     height: 57.2px;
-    padding: 8px 24px;
+    padding: 8px 12px;
   }
 }
 
