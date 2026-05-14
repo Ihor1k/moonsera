@@ -1,7 +1,7 @@
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+// import gsap from "gsap";
+// import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-gsap.registerPlugin(ScrollTrigger);
+// gsap.registerPlugin(ScrollTrigger);
 
 const popup = document.getElementById('popup');
 const openButtons = document.querySelectorAll('.button, .header-button, .hero-button, .contact-button, .built-btn');
